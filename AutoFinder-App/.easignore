@@ -1,0 +1,22 @@
+# Ignore TypeScript errors during build
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Ignore test files
+**/__tests__/**
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Ignore documentation
+*.md
+!README.md
+
+# Ignore build artifacts
+dist/
+build/
+.expo/
+
+# Ignore problematic image files (if corrupted)
+# assets/CarImages/van.png
