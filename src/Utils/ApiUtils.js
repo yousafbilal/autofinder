@@ -11,6 +11,7 @@
  */
 export const fetchWithRetry = async (url, options = {}, maxRetries = 1) => {
     let lastError;
+    let currentUrl = url;
     // Intelligently find the token (look for 'token' OR in 'user' object)
     let token = localStorage.getItem('token');
     if (!token) {
